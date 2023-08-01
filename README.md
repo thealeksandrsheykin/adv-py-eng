@@ -1,1 +1,1 @@
-# adv-py-eng
+# Advanced Python для сетевых инженеров
