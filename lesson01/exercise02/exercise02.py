@@ -66,4 +66,3 @@ class Network:
 if __name__ == "__main__":
     # пример создания экземпляра
     net1 = Network('10.1.1.192/30')
-    print(net1.__iter__())
