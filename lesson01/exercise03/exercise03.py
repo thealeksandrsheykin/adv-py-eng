@@ -29,7 +29,7 @@ def send_show(device, show_commands):
 
 
 if __name__ == "__main__":
-    with open("tests/devices.yaml") as f:
+    with open("devices.yaml") as f:
         devices = yaml.safe_load(f)
     for dev_type, device_list in devices.items():
         print(dev_type.upper())
