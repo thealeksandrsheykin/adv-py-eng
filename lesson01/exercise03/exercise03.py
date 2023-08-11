@@ -34,6 +34,7 @@ if __name__ == "__main__":
     for dev_type, device_list in devices.items():
         print(dev_type.upper())
         for dev in device_list:
-            output = send_show(dev, "sh clock")
-            print(output)
+            output = send_show(dev, "sh arp")
+            pprint(output, width=120)
+            output = send_show(dev, ['sh arp', 'sh ip int br'])
             pprint(output, width=120)

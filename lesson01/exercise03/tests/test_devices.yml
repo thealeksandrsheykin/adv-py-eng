@@ -46,6 +46,15 @@ reachable_telnet_only:
     transport: paramiko
     timeout_socket: 5
     timeout_transport: 10
+  - platform: cisco_iosxe
+    host: 192.168.100.2
+    auth_username: admin
+    auth_password: cisco
+    auth_secondary: cisco
+    transport: telnet
+    port: 23
+    timeout_socket: 5
+    timeout_transport: 10
 unreachable:
   - platform: cisco_iosxe
     host: 192.168.100.55
